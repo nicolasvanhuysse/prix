@@ -33,8 +33,24 @@
             return prixTotal;
         }
 
-        console.log(CalculPrix(prix,nombre));
+        prixTotal = CalculPrix(prix,nombre);
+        console.log(prixTotal);
 
+        console.log("-------------------------")
+
+        var reduction;
+
+        reduction = 3;
+
+        console.log(prixTotal - (prixTotal*(reduction/100)));
+
+        function CalculReduction(prixTotal,reduction) {
+            var prixReduit;
+            prixReduit = prixTotal - (prixTotal*(reduction/100))
+            return prixReduit
+        }
+
+        console.log(CalculReduction(prixTotal,reduction))
     </script>
 </body>
 </html>
