@@ -9,7 +9,32 @@
 <body>
     
     <script>
-        console.log("10€")
+        // console.log("10€");
+        // console.log("5");
+        // console.log("UT");
+
+        var prix;
+        var nombre;
+        var etat;
+
+        prix = 10;
+        nombre = 5;
+        etat = "UT";
+
+        console.log(prix);
+        console.log(nombre);
+        console.log(etat);
+
+        console.log(prix*nombre);
+
+        function CalculPrix (prix,nombre) {
+            var prixTotal;
+            prixTotal = prix*nombre
+            return prixTotal;
+        }
+
+        console.log(CalculPrix(prix,nombre));
+
     </script>
 </body>
 </html>
